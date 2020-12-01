@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+*{
+  box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body{
+ font-family: 'Catamaran', sans-serif;
+ color:#fff;
+ font-size: 1.1rem;
+ line-height: 1.6;
+}
+h2 { 
+  font-size: 4rem;
+  text-align: center;
+}
+
+p{
+  font-size: 2rem;
+  text-align: center;
+}
+
+img{ 
+  width: 400px;
+  height: 300px;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+}
+
+.landing:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/ice-4401300_1280.jpg');
+  background-size: cover;
+  content: "";
+  z-index: -1;
+}
+
+nav {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+a, p {
+  font-size: 1.5rem;
+}
+
+nav ul li a {
+  padding: 0.5rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 0.31rem;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #fff;
+  color:#333;
+}
+
+.navbar .logo {
+  font-size: 2.2rem;
+}
+
+.home .container{
+  max-width: 1100px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: black;
+  border-radius: 0.31rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 3rem;
+  margin-left: 80px;
+}
+
+.home .container a:hover{
+  opacity: 0.7;
+}
+
+@media (max-width:700px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-bottom: 1.5rem;
+  }
+
+  .navbar .logo {
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  img {
+    width: 100%;
+  }
+
+  .home .container{
+    max-width: 320px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/*
+
+https://cdn.pixabay.com/photo/2019/08/12/13/45/ice-4401300_960_720.jpg
+
+https://cdn.pixabay.com/photo/2020/02/14/14/19/ice-cream-4848501_960_720.jpg
